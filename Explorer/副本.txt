@@ -1,0 +1,572 @@
+[Rainmeter]
+Author=Vit-Ok | vit-ok.deviantart.com
+Update=1000
+
+[Variables]
+Favorites="C:\Users\%username%\Favorites"
+
+Folder1="::{20D04FE0-3AEA-1069-A2D8-08002B30309D}"
+Folder1Name=计算机
+Folder2="C:\Users\%username%\Documents"
+Folder2Name=我的文档
+Folder3="C:\Users\%username%\Downloads"
+Folder3Name=下载收藏
+Folder4="C:\Users\%username%\Music"
+Folder4Name=音乐
+Folder5="C:\Users\%username%\Videos"
+Folder5Name=视频
+Folder6="C:\Users\%username%\Pictures"
+Folder6Name=图片
+Folder7="C:\Users\%username%\Pictures"
+Folder7Name=nihao
+
+App1="C:\Program Files\Internet Explorer\iexplore.exe"
+App1Name=Internet Explorer
+App2="%ProgramFiles%\Windows Media Player\wmplayer.exe"
+App2Name=Windows Media
+App3="%windir%\ehome\ehshell.exe"
+App3Name=Media Center
+App4="%SystemRoot%\system32\SoundRecorder.exe"
+App4Name=Recording
+App5="%windir%\system32\calc.exe"
+App5Name=Calculator
+App6="%windir%\system32\SnippingTool.exe"
+App6Name=Scissors
+App7="%windir%\system32\notepad.exe"
+App7Name=Notepad
+
+Com1=%windir%\System32\rundll32.exe user32.dll LockWorkStation
+Com2=%windir%\System32\shutdown.exe -r -t 00
+Com3=%windir%\System32\shutdown.exe -s -t 00
+
+SolidColor=0,0,0,1
+
+[Style]
+FontFace=Calibri
+FontSize=9
+StringStyle=Bold
+FontColor=255,255,255,220
+StringEffect=Shadow
+FontEffectColor=0,0,0,40
+AntiAlias=1
+
+[Style1]
+FontFace=Calibri
+FontSize=9
+StringStyle=Bold
+FontColor=255,255,255,255
+AntiAlias=1
+
+[Style2]
+FontFace=Calibri
+FontSize=9
+StringStyle=Bold
+FontColor=0,0,0,180
+StringEffect=Shadow
+FontEffectColor=255,255,255,80
+AntiAlias=1
+
+[Border]
+Meter=IMAGE
+ImageName=bar.png
+W=#ScreenAreaWidth#
+H=40
+
+[Button]
+Meter=IMAGE
+ImageName=mark.png
+X=5
+Y=0
+SolidColor=#SolidColor#
+H=52
+W=24
+LeftMouseDownAction=!Execute ["#Favorites#"]
+MouseOverAction=!Execute [!RainmeterShowMeter Back][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter Back][!RainmeterRedraw]
+
+[Back]
+Meter=IMAGE
+ImageName=mark1.png
+X=5
+Y=0
+Hidden=1
+
+[BG]
+Meter=STRING
+X=350
+Y=7
+SolidColor=#SolidColor#
+H=16
+w=54
+LeftMouseDownAction=!Execute [!RainmeterHideMeter BG1][!RainmeterHideMeter BG][!RainmeterShowMeter BG2][!RainmeterShowMeter BG3][!RainmeterShowMeter App1][!RainmeterShowMeter App2][!RainmeterShowMeter App3][!RainmeterShowMeter App4][!RainmeterShowMeter App5][!RainmeterShowMeter App6][!RainmeterShowMeter App7][!RainmeterRedraw]
+
+[BG1]
+Meter=IMAGE
+ImageName=110.png
+X=304
+Y=0
+
+[BG2]
+Meter=IMAGE
+imageName=220.png
+X=r
+Y=0
+SolidColor=#SolidColor#
+H=246
+W=144
+Hidden=1
+MouseLeaveAction=!Execute [!RainmeterShowMeter BG][!RainmeterShowMeter BG1][!RainmeterHideMeter BG2][!RainmeterHideMeter BG3][!RainmeterHideMeter App1][!RainmeterHideMeter App2][!RainmeterHideMeter App3][!RainmeterHideMeter App4][!RainmeterHideMeter App5][!RainmeterHideMeter App6][!RainmeterHideMeter App7][!RainmeterRedraw]
+
+[BG3]
+Meter=STRING
+X=350
+Y=7
+SolidColor=#SolidColor#
+H=16
+w=54
+Hidden=1
+LeftMouseDownAction=!Execute [!RainmeterShowMeter BG][!RainmeterShowMeter BG1][!RainmeterHideMeter BG2][!RainmeterHideMeter BG3][!RainmeterHideMeter App1][!RainmeterHideMeter App2][!RainmeterHideMeter App3][!RainmeterHideMeter App4][!RainmeterHideMeter App5][!RainmeterHideMeter App6][!RainmeterHideMeter App7][!RainmeterRedraw]
+
+[Back1]
+Meter=IMAGE
+ImageName=Menu.png
+X=311
+Y=47
+Hidden=1
+
+[Back2]
+Meter=IMAGE
+ImageName=Menu.png
+X=r
+Y=26r
+Hidden=1
+
+[Back3]
+Meter=IMAGE
+ImageName=Menu.png
+X=r
+Y=26r
+Hidden=1
+
+[Back4]
+Meter=IMAGE
+ImageName=Menu.png
+X=r
+Y=26r
+Hidden=1
+
+[Back5]
+Meter=IMAGE
+ImageName=Menu.png
+X=r
+Y=26r
+Hidden=1
+
+[Back6]
+Meter=IMAGE
+ImageName=Menu.png
+X=r
+Y=26r
+Hidden=1
+
+[Back7]
+Meter=IMAGE
+ImageName=Menu.png
+X=r
+Y=26r
+Hidden=1
+
+[Folder1]
+Meter=STRING
+MeterStyle=Style
+Text=#Folder1Name#
+X=38
+Y=7
+SolidColor=#SolidColor#
+H=16
+w=46
+LeftMouseDownAction=!Execute ["#Folder1#"]
+
+[Folder2]
+Meter=STRING
+MeterStyle=Style
+Text=#Folder2Name#
+x=6R
+y=7
+SolidColor=#SolidColor#
+H=16
+w=62
+LeftMouseDownAction=!Execute ["#Folder2#"]
+
+[Folder3]
+Meter=STRING
+MeterStyle=Style
+Text=#Folder3Name#
+x=6R
+y=7
+SolidColor=#SolidColor#
+H=16
+w=60
+LeftMouseDownAction=!Execute ["#Folder3#"]
+
+[Folder4]
+Meter=STRING
+MeterStyle=Style
+Text=#Folder4Name#
+x=6R
+y=7
+SolidColor=#SolidColor#
+H=16
+w=34
+LeftMouseDownAction=!Execute ["#Folder4#"]
+
+[Folder5]
+Meter=STRING
+MeterStyle=Style1
+Text=#Folder5Name#
+x=6R
+y=7
+SolidColor=#SolidColor#
+H=16
+w=34
+LeftMouseDownAction=!Execute ["#Folder5#"]
+
+[Folder6]
+Meter=STRING
+MeterStyle=Style
+Text=#Folder6Name#
+x=6R
+y=7
+SolidColor=#SolidColor#
+H=16
+w=40
+LeftMouseDownAction=!Execute ["#Folder6#"]
+
+[Folder7]
+Meter=STRING
+MeterStyle=Style
+Text=Programs
+x=6R
+y=7
+SolidColor=#SolidColor#
+H=16
+w=54
+
+[App1]
+Meter=STRING
+StringAlign=CENTER
+MeterStyle=Style
+Text="#App1Name#"
+X=376
+Y=52
+SolidColor=#SolidColor#
+H=16
+W=100
+ClipString=1
+Hidden=1
+MouseOverAction=!Execute [!RainmeterShowMeter Back1][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter Back1][!RainmeterRedraw]
+LeftMouseDownAction=!Execute ["#App1#"]
+
+[App2]
+Meter=STRING
+StringAlign=CENTER
+MeterStyle=Style
+Text="#App2Name#"
+X=r
+Y=26r
+SolidColor=#SolidColor#
+H=16
+W=100
+ClipString=1
+Hidden=1
+MouseOverAction=!Execute [!RainmeterShowMeter Back2][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter Back2][!RainmeterRedraw]
+LeftMouseDownAction=!Execute ["#App2#"]
+
+[App3]
+Meter=STRING
+StringAlign=CENTER
+MeterStyle=Style
+Text="#App3Name#"
+X=r
+Y=26r
+SolidColor=#SolidColor#
+H=16
+W=100
+ClipString=1
+Hidden=1
+MouseOverAction=!Execute [!RainmeterShowMeter Back3][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter Back3][!RainmeterRedraw]
+LeftMouseDownAction=!Execute ["#App3#"]
+
+[App4]
+Meter=STRING
+StringAlign=CENTER
+MeterStyle=Style
+Text="#App4Name#"
+X=r
+Y=26r
+SolidColor=#SolidColor#
+H=16
+W=100
+ClipString=1
+Hidden=1
+MouseOverAction=!Execute [!RainmeterShowMeter Back4][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter Back4][!RainmeterRedraw]
+LeftMouseDownAction=!Execute ["#App4#"]
+
+[App5]
+Meter=STRING
+StringAlign=CENTER
+MeterStyle=Style
+Text="#App5Name#"
+X=r
+Y=26r
+SolidColor=#SolidColor#
+H=16
+W=100
+ClipString=1
+Hidden=1
+MouseOverAction=!Execute [!RainmeterShowMeter Back5][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter Back5][!RainmeterRedraw]
+LeftMouseDownAction=!Execute ["#App5#"]
+
+[App6]
+Meter=STRING
+StringAlign=CENTER
+MeterStyle=Style
+Text="#App6Name#"
+X=r
+Y=26r
+SolidColor=#SolidColor#
+H=16
+W=100
+ClipString=1
+Hidden=1
+MouseOverAction=!Execute [!RainmeterShowMeter Back6][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter Back6][!RainmeterRedraw]
+LeftMouseDownAction=!Execute ["#App6#"]
+
+[App7]
+Meter=STRING
+StringAlign=CENTER
+MeterStyle=Style
+Text="#App7Name#"
+X=r
+Y=26r
+SolidColor=#SolidColor#
+H=16
+W=100
+ClipString=1
+Hidden=1
+MouseOverAction=!Execute [!RainmeterShowMeter Back7][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter Back7][!RainmeterRedraw]
+LeftMouseDownAction=!Execute ["#App7#"]
+
+[BGcom]
+Meter=IMAGE
+ImageName=button.png
+X=((#SCREENAREAWIDTH#) - 228)
+Y=5
+SolidColor=#SolidColor#
+H=20
+W=20
+LeftMouseDownAction=!Execute [!RainmeterHideMeter BGcom][!RainmeterShowMeter BGcom1][!RainmeterShowMeter Backcom2][!RainmeterShowMeter TextC4][!RainmeterShowMeter Button1][!RainmeterShowMeter Button2][!RainmeterShowMeter Button3][!RainmeterRedraw]
+MouseOverAction=!Execute [!RainmeterShowMeter Backcom1][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter Backcom1][!RainmeterRedraw]
+
+[BGcom1]
+Meter=IMAGE
+imageName=440.png
+X=((#SCREENAREAWIDTH#) - 229)
+Y=4
+SolidColor=#SolidColor#
+H=21
+W=21
+Hidden=1
+LeftMouseDownAction=!Execute [!RainmeterHideMeter BGcom1][!RainmeterShowMeter BGcom][!RainmeterHideMeter Backcom2][!RainmeterHideMeter TextC4][!RainmeterHideMeter Button1][!RainmeterHideMeter Button2][!RainmeterHideMeter Button3][!RainmeterRedraw]
+
+[Backcom1]
+Meter=IMAGE
+ImageName=330.png
+X=((#SCREENAREAWIDTH#) - 229)
+Y=4
+Hidden=1
+
+[Backcom2]
+Meter=IMAGE
+imageName=770.png
+X=((#SCREENAREAWIDTH#) - 308)
+Y=0
+Hidden=1
+MouseLeaveAction=!Execute [!RainmeterShowMeter BGcom][!RainmeterHideMeter BGcom1][!RainmeterHideMeter Backcom2][!RainmeterHideMeter TextC4][!RainmeterHideMeter Button1][!RainmeterHideMeter Button2][!RainmeterHideMeter Button3][!RainmeterRedraw]
+
+[Button1]
+Meter=IMAGE
+ImageName=Lock.png
+x=((#SCREENAREAWIDTH#) - 272)
+y=76
+SolidColor=#SolidColor#
+H=34
+W=36
+Hidden=1
+MouseOverAction=!Execute [!RainmeterHideMeter TextC4][!RainmeterShowMeter TextC1][!RainmeterShowMeter Backcom6][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterShowMeter TextC4][!RainmeterHideMeter TextC1][!RainmeterHideMeter Backcom6][!RainmeterRedraw]
+LeftMouseDownAction=!Execute [#Com1#]
+
+[Button2]
+Meter=IMAGE
+ImageName=Refresh.png
+x=36r
+y=r
+SolidColor=#SolidColor#
+H=34
+W=36
+Hidden=1
+MouseOverAction=!Execute [!RainmeterHideMeter TextC4][!RainmeterShowMeter TextC2][!RainmeterShowMeter Backcom7][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterShowMeter TextC4][!RainmeterHideMeter TextC2][!RainmeterHideMeter Backcom7][!RainmeterRedraw]
+LeftMouseDownAction=!Execute [#Com2#]
+
+[Button3]
+Meter=IMAGE
+ImageName=Power.png
+x=36r
+y=r
+SolidColor=#SolidColor#
+H=34
+W=36
+Hidden=1
+MouseOverAction=!Execute [!RainmeterHideMeter TextC4][!RainmeterShowMeter TextC3][!RainmeterShowMeter Backcom8][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterShowMeter TextC4][!RainmeterHideMeter TextC3][!RainmeterHideMeter Backcom8][!RainmeterRedraw]
+LeftMouseDownAction=!Execute [#Com3#]
+
+[TextC1]
+Meter=STRING
+MeterStyle=Style2
+StringAlign=CENTER
+Text=Block
+X=((#SCREENAREAWIDTH#) - 218)
+Y=52
+Hidden=1
+
+[TextC2]
+Meter=STRING
+MeterStyle=Style2
+StringAlign=CENTER
+Text=Reboot
+X=r
+Y=r
+Hidden=1
+
+[TextC3]
+Meter=STRING
+MeterStyle=Style2
+StringAlign=CENTER
+Text=Shutdown
+X=r
+Y=r
+Hidden=1
+
+[TextC4]
+Meter=STRING
+MeterStyle=Style2
+StringAlign=CENTER
+Text=System
+X=r
+Y=r
+Hidden=1
+
+[Backcom6]
+Meter=IMAGE
+ImageName=Lock1.png
+X=((#SCREENAREAWIDTH#) - 272)
+Y=76
+Hidden=1
+
+[Backcom7]
+Meter=IMAGE
+ImageName=Refresh1.png
+X=36r
+Y=r
+Hidden=1
+
+[Backcom8]
+Meter=IMAGE
+ImageName=Power1.png
+X=36r
+Y=r
+Hidden=1
+
+[Time]
+Measure=Time
+Format=%A %H:%M | %d.%B.%Y
+Substitute="January":"01","February":"02","March":"03","April":"04","May":"05","June":"06","July":"07","August":"08","September":"09","October":"10","November":"11","December":"12"
+
+[(time)]
+Meter=String
+MeterStyle=Style
+StringAlign=CENTER
+MeasureName=Time
+X=((#SCREENAREAWIDTH#) - 118)
+Y=7
+SolidColor=#SolidColor#
+H=16
+w=176
+LeftMouseUpAction=!Execute [control.exe timedate.cpl]
+
+[MeasureBin]
+Measure=Plugin
+Plugin=RecycleManager.dll
+Drives=ALL
+RecycleType=COUNT
+
+[MeasureSize]
+Measure=Plugin
+Plugin=RecycleManager.dll
+Drives=ALL
+RecycleType=SIZE
+
+[BinBak]
+Meter=IMAGE
+ImageName=trash bak.png
+X=((#SCREENAREAWIDTH#) - 28)
+Y=0
+Hidden=1
+
+[MeterBinEmpty]
+Meter=IMAGE
+ImageName=trash empty.png
+X=((#SCREENAREAWIDTH#) - 28)
+Y=0
+SolidColor=#SolidColor#
+H=28
+W=28
+Hidden=0
+MouseOverAction=!Execute [!RainmeterShowMeter BinBak][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter BinBak][!RainmeterRedraw]
+LeftMouseUpAction =!execute [::{645FF040-5081-101B-9F08-00AA002F954E}]
+
+
+[MeterBinFull]
+Meter=IMAGE
+ImageName=trash full.png
+X=((#SCREENAREAWIDTH#) - 28)
+Y=0
+SolidColor=#SolidColor#
+H=28
+W=28
+Hidden=1
+MouseOverAction=!Execute [!RainmeterShowMeter BinBak][!RainmeterRedraw]
+MouseLeaveAction=!Execute [!RainmeterHideMeter BinBak][!RainmeterRedraw]
+LeftMouseDownAction=!execute [!RainmeterPluginBang "MeasureBin OpenBin"]
+RightMouseUpAction=!execute [!RainmeterPluginBang "MeasureBin EmptyBin"]
+
+//垃圾桶
+/*[BinAction]
+Measure=Calc
+Formula=MeasureBin
+IfAboveAction=!execute [!RainmeterHideMeter MeterBinEmpty][!RainmeterShowMeter MeterBinFull]
+IfAboveValue=0
+IfEqualAction=!execute [!RainmeterHideMeter MeterBinFull][!RainmeterShowMeter MeterBinEmpty]
+IfEqualValue=0*/
